@@ -29,7 +29,7 @@ public class CreateOrderFunction
         HttpRequestData req)
     {
         _logger.LogInformation(
-            "CreateOrder function triggered.");
+            "CreateOrder function triggered using the github deployment workflow publish files.");
 
         var request =
             await req.ReadFromJsonAsync<CreateOrderRequest>();
