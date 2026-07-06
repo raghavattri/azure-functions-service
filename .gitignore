@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local Azure Functions settings - may contain secrets
+local.settings.json
+
+# Publish output
+publish/
