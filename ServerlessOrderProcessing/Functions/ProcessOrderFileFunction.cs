@@ -17,6 +17,7 @@ public class ProcessOrderFileFunction
     public async Task Run(
         [BlobTrigger(
             "incoming-orders/{name}",
+            Source = BlobTriggerSource.EventGrid,
             Connection = "OrderStorageConnection")]
         Stream blobStream,
         string name)
